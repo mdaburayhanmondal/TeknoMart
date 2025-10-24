@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="images/teknomartlogo.svg"
+      type="image/x-icon"
+    />
+    <title>TeknoMart by Rayhan</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- navbar -->
+      <nav
+        class="bg-[#011977] p-4 grid place-items-center lg:grid-cols-[1fr_5fr_1fr] gap-x-4 lg:justify-between lg:items-center"
+      >
+        <!-- logo -->
+        <div class="lg:justify-self-start">
+          <img
+            src="images/TEKNOMART-Whaite.svg"
+            alt=""
+            class="cursor-pointer"
+          />
+        </div>
+        <!-- Search -->
+        <div
+          class="bg-white hidden lg:flex flex-row gap-x-4 justify-between items-center w-full p-2 rounded-md"
+        >
+          <input
+            type="text"
+            placeholder="What can we help you find today?"
+            class="outline-none h-full text-[#1e2d7d] placeholder-gray-400 bg-transparent w-[95%] text-sm py-1 px-2"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass text-black pr-6 cursor-pointer hover:text-[#1e2d7d]"
+          ></i>
+        </div>
+        <!-- Account and Cart -->
+        <div
+          class="hidden lg:flex flex-row items-center gap-x-6 text-white [&>div]:cursor-pointer [&>div]:hover:text-[#fff204] [&>div]:ease-in-out [&>div]:duration-300"
+        >
+          <!-- Account -->
+          <div class="lg:flex flex-row items-center gap-x-2">
+            <i class="fa-solid fa-user"></i>
+            <p>Account</p>
+          </div>
+          <!-- Cart -->
+          <div class="lg:flex flex-row items-center gap-x-2">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Cart</p>
+          </div>
+        </div>
+      </nav>
+      <!-- menubar -->
+      <div class="hidden lg:flex flex-row justify-between p-4 bg-[#E9F3FF]">
+        <!-- 1st Flexbox -->
+        <ul
+          class="flex items-center gap-x-4 [&>li]:text-sm [&>li]:cursor-pointer [&>li]:font-medium [&>li]:hover:text-[#1e2d7d]"
+        >
+          <li><i class="fa-solid fa-bars-staggered"></i></li>
+          <li>Shop By Department</li>
+          <li>Home</li>
+          <li>Shop</li>
+          <li>New Arivals</li>
+          <li>Best Sellers</li>
+          <li>Explore</li>
+          <li>Gift</li>
+          <li>Sale</li>
+        </ul>
+        <!-- 2nd Flexbox -->
+        <div
+          class="flex items-center gap-x-2 text-sm [&>div]:cursor-pointer [&>div]:hover:text-[#1e2d7d]"
+        >
+          <div class="flex items-center gap-x-2 font-medium">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <p>Show Today's Deals</p>
+          </div>
+          <hr class="h-2 w-[15px] text-gray-300 rotate-90" />
+          <div class="flex items-center gap-x-2 font-medium">
+            <i class="fa-solid fa-percent"></i>
+            <p>Sale! 30% OFF!</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Categories -->
+    <div class="mt-20 lg:mt-0 p-4 overflow-x-auto scroll-smooth">
+      <div class="grid grid-flow-col auto-cols-[minmax(100px,1fr)] gap-x-8">
+        <!-- card1 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/tvandprojectors.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">TVs & Projectors</p>
+        </div>
+        <!-- card2 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/laptopandcomputers.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Laptops & Computers</p>
+        </div>
+        <!-- card3 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/cellphone.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Cell Phones & Accessories</p>
+        </div>
+        <!-- card4 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/ps5.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Gaming</p>
+        </div>
+        <!-- card5 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/wearable.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Wearable Technologies</p>
+        </div>
+        <!-- card6 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/smarthome.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Smarthome Security & Wifi</p>
+        </div>
+        <!-- card7 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/electrictransportation.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Electric Transportation</p>
+        </div>
+        <!-- card8 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/cameras.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Cameras & Drones</p>
+        </div>
+        <!-- card9 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/tablets.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Tablets & E-Readers</p>
+        </div>
+        <!-- card10 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/printers.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Printers & Home Office</p>
+        </div>
+        <!-- card11 -->
+        <div
+          class="flex flex-col items-center justify-center gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/majorappliances.svg"
+            alt=""
+            class="w-full object-contain hover:scale-110 duration-300"
+          />
+          <p class="text-sm text-center">Major Appliances</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div
+      style="background-image: url('images/hairdryers.avif')"
+      class="bg-[#f4f5f7] mx-4 my-6 px-4 md:px-20 lg:px-20 py-28 h-auto bg-cover bg-center"
+    >
+      <!-- col1 -->
+      <div
+        class="flex flex-col gap-y-4 w-[70%] md:w-[50%] lg:w-[40%] xl:w-[35%]"
+      >
+        <p class="text-gray-400 text-sm">NEW PRODUCT</p>
+        <h1
+          class="text-2xl font-bold text-[#1e2d7d] md:text-3xl md:leading-10 lg:leading-14 lg:text-5xl"
+        >
+          Create The Perfect Style
+        </h1>
+        <p class="text-xs text-[#1e2d7d] sm:w-[95%] leading-6">
+          Fast drying without extreme heat is what our hair drvers do best. With
+          a hiah-velocity jet of controlled .
+        </p>
+        <div
+          class="flex items-center justify-center gap-x-2 bg-[#1b45b7] w-[150px] px-6 py-4 rounded-md hover:bg-[#76bcc9] cursor-pointer duration-300 hover:scale-105 hover:border-[#76bcc9]"
+        >
+          <p class="text-sm text-white">Shop Now</p>
+          <i class="fa-regular fa-square-caret-right text-white"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured -->
+    <div
+      class="m-4 flex flex-col gap-y-2 md:flex-row md:items-stretch md:justify-center md:gap-y-0 md:gap-x-2 lg:gap-x-4"
+    >
+      <!-- card1 -->
+      <div
+        class="bg-[#061871] px-4 py-16 flex flex-row items-center rounded-sm"
+      >
+        <div class="flex flex-col gap-y-2">
+          <h2 class="text-2xl text-white font-medium">High Security Camera</h2>
+          <p class="text-xs text-white">Starting from</p>
+          <p class="text-2xl text-[#fff204] font-medium">$599</p>
+          <div
+            class="flex items-center justify-center gap-x-2 bg-white w-fit px-6 py-4 rounded-md hover:bg-[#fb8472] cursor-pointer duration-300 hover:scale-105 hover:border-[#fb8472]"
+          >
+            <p class="text-sm text-[#061871]">Shop Camera</p>
+            <i class="fa-regular fa-square-caret-right text-[#1e2d7d]"></i>
+          </div>
+        </div>
+        <div class="">
+          <img src="images/securitycamera.avif" alt="" />
+        </div>
+      </div>
+      <!-- card2 -->
+      <div
+        class="bg-[#1b45b7] px-4 py-16 flex flex-row items-center rounded-sm"
+      >
+        <div class="flex flex-col gap-y-2">
+          <h2 class="text-2xl text-white font-medium">New Beats Studio</h2>
+          <p class="text-xs text-white">Starting from</p>
+          <p class="text-2xl text-[#fff204] font-medium">$499</p>
+          <div
+            class="flex items-center justify-center gap-x-2 bg-white w-fit px-6 py-4 rounded-md hover:bg-[#fb8472] cursor-pointer duration-300 hover:scale-105 hover:border-[#fb8472]"
+          >
+            <p class="text-sm text-[#1b45b7]">Shop Studio</p>
+            <i class="fa-regular fa-square-caret-right text-[#1e2d7d]"></i>
+          </div>
+        </div>
+        <div class="">
+          <img src="images/sounbox.avif" alt="" />
+        </div>
+      </div>
+      <!-- card3 -->
+      <div
+        class="bg-[#5ebecc] px-4 py-16 flex flex-row items-center rounded-sm"
+      >
+        <div class="flex flex-col gap-y-2">
+          <h2 class="text-2xl text-white font-medium">
+            Limited Weekly Discount
+          </h2>
+          <p class="text-xs text-white">Starting from</p>
+          <p class="text-2xl text-[#fff204] font-medium">$999</p>
+          <div
+            class="flex items-center justify-center gap-x-2 bg-white w-fit px-6 py-4 rounded-md hover:bg-[#fb8472] cursor-pointer duration-300 hover:scale-105 hover:border-[#fb8472]"
+          >
+            <p class="text-sm text-[#5ebecc]">Shop Discount</p>
+            <i class="fa-regular fa-square-caret-right text-[#1e2d7d]"></i>
+          </div>
+        </div>
+        <div class="">
+          <img src="images/ipads.avif" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Explore Products -->
+    <div class="flex flex-col my-8">
+      <!-- Navigation -->
+      <div
+        class="p-4 flex flex-col justify-center items-center gap-y-4 md:flex-row md:gap-y-0 md:justify-between"
+      >
+        <h3 class="text-2xl font-semibold text-[#011977]">Explore Products</h3>
+        <ul
+          class="flex flex-row justify-center items-center gap-x-4 [&>li]:cursor-pointer [&>li]:hover:text-[#011977]"
+        >
+          <li
+            class="underline underline-offset-8 decoration-[#011977] text-[#011977]"
+          >
+            Best Seller
+          </li>
+          <li>New in</li>
+          <li>Trending</li>
+        </ul>
+      </div>
+      <!-- Product Grid -->
+      <div
+        class="m-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 divide-x divide-y divide-gray-300 border border-gray-300"
+      >
+        <!-- Relative Container 1 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/sonyheadphone.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Sony XB950BT Wireless Headphones - Extra Bass
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex flex-row items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 2 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/applemacbookpro.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Apple MacBook Pro 16" M1 Pro 16GB/512GB Silver
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 3 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/gamingconsole.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Microware 9 Cap DualSense Wireless Controller
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 4 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/applewatch.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Apple Watch Series 9 GPS, 40mm Gold
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 5 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/speaker.png"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Harman Kardon Invoke Voice-Activated Speaker
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 6 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/sonymonitor.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              New Sony XBR-950G BRAVIA 4K HDR Ultra HD TV
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 7 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/applewatch8.png"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Apple Watch Series 8 (41mm, GPS + Cellular)
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 8 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/appleairpods.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Apple AirPods Pro (Active Noise Cancellation)
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 9 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/imac.png"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Apple Studio Display 27" 5K Retina Monitor...
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 10 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/asus.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Asus VivoBook S533EA 15.6" Laptop - 17
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 11 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/iphone16pro.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              New Apple IPhone 16 Pro Max Desert Titanium
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 12 -->
+        <div class="p-4 relative flex flex-col justify-between gap-y-2">
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/sonyps5.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Sony PS5 Slim Disc Edition 1TB - UK Version
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured TV -->
+    <div
+      style="background-image: url('images/neoqled.avif')"
+      class="bg-center bg-cover rounded-lg text-white mx-4 my-20 p-8 md:p-20 flex flex-col items-center gap-y-32 md:gap-y-48 xl:gap-y-72"
+    >
+      <!-- First Row -->
+      <div class="flex flex-col items-center gap-y-8">
+        <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-center">
+          New Television
+        </h3>
+        <ul
+          class="flex flex-row items-center justify-center gap-x-2 md:gap-x-6 [&>li:first-child]:bg-white [&>li:first-child]:text-[#1e2d7d] [&>li]:border [&>li]:border-white [&>li]:px-4 [&>li]:py-2 [&>li]:text-xs [&>li]:text-center md:[&>li]:text-sm md:[&>li]:font-medium [&>li]:rounded-full [&>li]:whitespace-nowrap [&>li]:cursor-pointer [&>li]:hover:scale-105 [&>li]:duration-300 [&>li]:ease-in-out"
+        >
+          <li>NEO QLED</li>
+          <li>QLED</li>
+          <li>QLED</li>
+          <li>QLED</li>
+        </ul>
+      </div>
+      <!-- Second Row -->
+      <div class="flex flex-col items-center gap-y-8">
+        <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-center">
+          Great things never end, they just evolvet
+        </h3>
+        <div
+          class="flex items-center justify-center gap-x-2 bg-white w-fit px-6 py-4 rounded-md hover:bg-[#76bcc9] cursor-pointer duration-300 hover:scale-105 hover:border-[#76bcc9]"
+        >
+          <p class="text-sm text-[#1e2d7d]">Shop Now</p>
+          <i class="fa-regular fa-square-caret-right text-[#1e2d7d]"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sonic Wave -->
+    <div class="mx-4 my-10 grid grid-rows-2 place-items-center gap-y-6">
+      <!-- Image -->
+      <div class="">
+        <img src="images/sonicwave.avif" alt="" class="w-full" />
+      </div>
+      <!-- Text Content -->
+      <div class="flex flex-col items-center gap-y-6 lg:w-[80%] xl:w-[55%]">
+        <h4
+          class="text-center text-xl md:text-3xl md:w-[70%] font-semibold md:leading-10 text-[#1e2d7d]"
+        >
+          Immersive Audio For Every Moment: Comfort, Clarity, And Style
+        </h4>
+        <p
+          class="text-center text-gray-500 text-xs md:text-sm leading-6 md:leading-6 lg:w-[90%] xl:w-[85%]"
+        >
+          Discover SonicWave headphones, designed for ultimate sound quality and
+          comfort. Elevate your listening experience with crystal- clear audio
+          and sleek design.
+        </p>
+        <div
+          class="flex items-center justify-center gap-x-2 bg-white border w-fit px-6 py-4 rounded-md hover:bg-[#76bcc9] cursor-pointer duration-300 hover:scale-105 hover:border-[#76bcc9]"
+        >
+          <p class="text-sm text-[#1e2d7d]">Shop Now</p>
+          <i class="fa-regular fa-square-caret-right text-[#1e2d7d]"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deal Slide -->
+    <div
+      class="bg-[#1d1d1d] rounded-sm mx-4 my-8 md:mb-20 p-4 flex flex-col gap-y-6 md:flex-row md:gap-x-2 md:gap-y-0 md:items-center"
+    >
+      <!-- Countdown Section -->
+      <div
+        class="text-white pt-6 flex flex-col gap-y-4 md:items-start md:pt-0 lg:px-8"
+      >
+        <!-- Countdow -->
+        <div
+          class="flex flex-row items-center gap-x-4 border border-[#fff204] p-2 w-fit rounded-xl"
+        >
+          <div class="text-[#fff204] flex flex-col items-center">
+            <p class="text-2xl font-semibold">27</p>
+            <p class="text-xs">Days</p>
+          </div>
+          <div class="text-[#fff204] flex flex-col items-center">
+            <p class="text-2xl font-semibold">17</p>
+            <p class="text-xs">Hours</p>
+          </div>
+          <div class="text-[#fff204] flex flex-col items-center">
+            <p class="text-2xl font-semibold">39</p>
+            <p class="text-xs">Minutes</p>
+          </div>
+          <div class="text-[#fff204] flex flex-col items-center">
+            <p class="text-2xl font-semibold">53</p>
+            <p class="text-xs">Seconds</p>
+          </div>
+        </div>
+        <h4 class="text-2xl font-medium md:text-3xl lg:whitespace-nowrap">
+          25 Days of Deals
+        </h4>
+        <p class="text-xs md:text-sm">
+          New deals, every day. Ends December 25.
+        </p>
+        <!-- CTA -->
+        <div
+          class="my-2 flex items-center justify-center gap-x-2 bg-transparent w-fit pb-[3px] border-b cursor-pointer hover:scale-105 duration-300"
+        >
+          <p class="text-xs text-white md:text-sm">See All Products</p>
+          <i class="fa-regular fa-square-caret-right text-white text-xs"></i>
+        </div>
+      </div>
+      <!-- Product Grid -->
+      <div
+        class="mx-2 mb-4 md:mb-0 grid grid-rows-1 grid-flow-col auto-cols-[100%] overflow-x-auto scroll-smooth md:auto-cols-[50%] lg:auto-cols-[33.33%] xl:auto-cols-[20%] divide-x divide-gray-300"
+      >
+        <!-- Relative Container 1 -->
+        <div
+          class="w-full bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/sonyheadphone.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Sony XB950BT Wireless Headphones - Extra Bass
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex flex-row items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 2 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/applemacbookpro.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Apple MacBook Pro 16" M1 Pro 16GB/512GB Silver
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 3 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/gamingconsole.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Microware 9 Cap DualSense Wireless Controller
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 4 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/applewatch.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Apple Watch Series 9 GPS, 40mm Gold
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 5 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/speaker.png"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Harman Kardon Invoke Voice-Activated Speaker
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 6 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/sonymonitor.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              New Sony XBR-950G BRAVIA 4K HDR Ultra HD TV
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sale Time -->
+    <div
+      style="background-image: url('images/bg.png')"
+      class="mx-4 my-16 *:text-center bg-center bg-cover py-4 grid grid-rows-4 place-items-center gap-y-2 md:grid-rows-1 md:grid-cols-4 md:py-8 rounded-md"
+    >
+      <h3 class="text-2xl font-semibold text-[#fff204]">It's Sale Time</h3>
+      <div class="space-y-2">
+        <p class="text-white text-xs md:text-sm">Up To 25% Off Everything</p>
+        <p class="text-[#fff204] text-sm font-semibold">Code: GET25</p>
+      </div>
+      <div
+        class="flex items-center justify-center gap-x-2 bg-transparent border border-white w-fit px-8 py-4 rounded-md hover:bg-[#76bcc9] cursor-pointer duration-300 hover:scale-105 hover:border-[#76bcc9]"
+      >
+        <p class="text-sm text-white">Discover More</p>
+        <i class="fa-regular fa-square-caret-right text-white"></i>
+      </div>
+      <div class="space-y-2">
+        <p class="text-white text-xs md:text-sm">Limited time only.</p>
+        <p class="text-white text-xs md:text-sm">Excludes selected lines.</p>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="m-4 flex flex-col items-center gap-y-6">
+      <h2 class="text-[#1e2d7d] font-semibold text-xl md:text-2xl lg:text-3xl">
+        What Clients Say
+      </h2>
+      <!-- Card Grid -->
+      <div
+        class="w-full grid grid-rows-1 grid-flow-col auto-cols-[100%] md:auto-cols-[50%] lg:auto-cols-[33.33%] overflow-x-auto scroll-smooth divide-x divide-gray-300 border border-gray-300"
+      >
+        <!-- Card 1-->
+        <div class="p-4 flex flex-col gap-y-6">
+          <div
+            class="grid grid-cols-[2fr_1fr] justify-between items-center gap-x-6"
+          >
+            <!-- Texts -->
+            <div class="flex flex-col gap-y-4">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3 class="text-[#1e2d7d] text-md font-semibold">
+                Great Features
+              </h3>
+              <p class="text-gray-500 text-sm leading-6">
+                "It Was Easy To Connect To My Wifi And Very Easy To Install. The
+                Directions Are Clear And Simple."
+              </p>
+            </div>
+            <!-- Image -->
+            <div class="">
+              <img
+                src="images/client1.avif"
+                alt=""
+                class="object-cover object-center"
+              />
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-[1fr_2fr] justify-between items-center gap-x-6 border-t border-gray-300"
+          >
+            <img
+              src="images/gamingconsole.avif"
+              alt=""
+              class="object-cover object-center max-w-20"
+            />
+            <div class="">
+              <h4 class="text-[#1e2d7d] text-sm font-semibold leading-6">
+                Microware 9 Cap DualSense Wireless Controller
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="p-4 flex flex-col gap-y-6">
+          <div
+            class="grid grid-cols-[2fr_1fr] justify-between items-center gap-x-6"
+          >
+            <!-- Texts -->
+            <div class="flex flex-col gap-y-4">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3 class="text-[#1e2d7d] text-md font-semibold">
+                Great Features
+              </h3>
+              <p class="text-gray-500 text-sm leading-6">
+                "It Was Easy To Connect To My Wifi And Very Easy To Install. The
+                Directions Are Clear And Simple."
+              </p>
+            </div>
+            <!-- Image -->
+            <div class="">
+              <img
+                src="images/client2.avif"
+                alt=""
+                class="object-cover object-center"
+              />
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-[1fr_2fr] justify-between items-center gap-x-6 border-t border-gray-300"
+          >
+            <img
+              src="images/applewatch8.png"
+              alt=""
+              class="object-cover object-center max-w-20"
+            />
+            <div class="">
+              <h4 class="text-[#1e2d7d] text-sm font-semibold leading-6">
+                Microware 9 Cap DualSense Wireless Controller
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="p-4 flex flex-col gap-y-6">
+          <div
+            class="grid grid-cols-[2fr_1fr] justify-between items-center gap-x-6"
+          >
+            <!-- Texts -->
+            <div class="flex flex-col gap-y-4">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3 class="text-[#1e2d7d] text-md font-semibold">
+                Great Features
+              </h3>
+              <p class="text-gray-500 text-sm leading-6">
+                "It Was Easy To Connect To My Wifi And Very Easy To Install. The
+                Directions Are Clear And Simple."
+              </p>
+            </div>
+            <!-- Image -->
+            <div class="">
+              <img
+                src="images/client3.avif"
+                alt=""
+                class="object-cover object-center"
+              />
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-[1fr_2fr] justify-between items-center gap-x-6 border-t border-gray-300"
+          >
+            <img
+              src="images/macbookpro.avif"
+              alt=""
+              class="object-cover object-center max-w-20"
+            />
+            <div class="">
+              <h4 class="text-[#1e2d7d] text-sm font-semibold leading-6">
+                Microware 9 Cap DualSense Wireless Controller
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Big Featured -->
+    <div
+      class="mx-4 my-20 grid grid-cols-1 gap-y-6 md:gap-y-0 md:grid-cols-2 md:gap-x-6 place-items-center"
+    >
+      <!-- First Card -->
+      <div
+        style="background-image: url('images/soundbar.avif')"
+        class="w-full h-full bg-cover bg-center px-6 py-10 xl:px-16 xl:py-24 flex flex-col gap-y-4 rounded-md"
+      >
+        <h2
+          class="text-white text-xl lg:text-2xl xl:text-3xl xl:leading-12 lg:w-[75%] font-semibold"
+        >
+          Meet The Ultimate Soundbar That Fits Your
+        </h2>
+        <p class="text-white text-sm xl:text-md">
+          The ultimate watch party at home? Yes, please.
+        </p>
+        <div
+          class="flex items-center justify-center gap-x-2 bg-white border border-white w-fit px-6 py-4 rounded-md hover:bg-[#76bcc9] cursor-pointer duration-300 hover:scale-105 hover:border-[#76bcc9]"
+        >
+          <p class="text-xs text-[#1e2d7d] font-semibold">Discover More</p>
+          <i
+            class="fa-regular fa-square-caret-right text-[#1e2d7d] text-xs font-semibold"
+          ></i>
+        </div>
+      </div>
+      <!-- Second Card -->
+      <div
+        style="background-image: url('images/lgfridge.avif')"
+        class="w-full h-full bg-cover bg-center px-6 py-10 xl:px-16 xl:py-24 flex flex-col gap-y-4 rounded-md"
+      >
+        <h2
+          class="text-white text-xl lg:text-2xl xl:text-3xl xl:leading-12 lg:w-[75%] font-semibold"
+        >
+          Freshness With LG InstaView Refrigerators
+        </h2>
+        <p class="text-white text-sm xl:text-md">Finance options available*</p>
+        <div
+          class="flex items-center justify-center gap-x-2 bg-white border border-white w-fit px-6 py-4 rounded-md hover:bg-[#76bcc9] cursor-pointer duration-300 hover:scale-105 hover:border-[#76bcc9]"
+        >
+          <p class="text-xs text-[#1e2d7d] font-semibold">Discover More</p>
+          <i
+            class="fa-regular fa-square-caret-right text-[#1e2d7d] text-xs font-semibold"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Brands -->
+    <div class="mx-4 mb-16 flex flex-col gap-y-4">
+      <div class="flex flex-row justify-between">
+        <h2 class="text-[#1e2d7d] font-semibold text-2xl">Top Tech Brands</h2>
+        <div
+          class="my-2 flex items-center justify-center gap-x-2 bg-transparent w-fit pb-[3px] border-b hover:border-[#1e2d7d] hover:scale-105 cursor-pointer duration-300 ease-in-out"
+        >
+          <p class="text-sm text-[#1e2d7d]">See All Products</p>
+          <i
+            class="fa-regular fa-square-caret-right text-[#1e2d7d] text-sm"
+          ></i>
+        </div>
+      </div>
+      <div
+        class="[&>img]:w-[150px] [&>img]:aspect-video [&>img]:p-6 [&>img]:object-center [&>img]:object-cover grid grid-rows-1 grid-flow-col auto-cols-[33.33%] md:auto-cols-[20%] lg:auto-cols-[14.285%] xl:auto-cols-[11.11%] overflow-x-auto border border-gray-300 divide-x divide-gray-300"
+      >
+        <img src="images/brand-01.avif" alt="" />
+        <img src="images/brand-02.avif" alt="" />
+        <img src="images/brand-003.avif" alt="" />
+        <img src="images/brand-04.avif" alt="" />
+        <img src="images/brand-05.avif" alt="" />
+        <img src="images/brand-06.avif" alt="" />
+        <img src="images/brand-07.avif" alt="" />
+        <img src="images/brand-08.avif" alt="" />
+        <img src="images/brand-09.avif" alt="" />
+      </div>
+    </div>
+
+    <!-- You May Also Like -->
+    <div class="flex flex-col my-12">
+      <!-- Navigation -->
+      <div
+        class="p-4 flex flex-col justify-center items-center gap-y-4 md:flex-row md:gap-y-0 md:justify-between"
+      >
+        <h3 class="text-2xl font-semibold text-[#011977]">You May Also Like</h3>
+        <div
+          class="my-2 flex items-center justify-center gap-x-2 bg-transparent w-fit pb-[3px] border-b hover:border-[#1e2d7d] hover:scale-105 cursor-pointer duration-300 ease-in-out"
+        >
+          <p class="text-sm text-[#1e2d7d]">See All Products</p>
+          <i
+            class="fa-regular fa-square-caret-right text-[#1e2d7d] text-sm"
+          ></i>
+        </div>
+      </div>
+      <!-- Product Grid -->
+      <div
+        class="mx-4 mb-4 md:mb-0 grid grid-rows-1 grid-flow-col auto-cols-[100%] overflow-x-auto scroll-smooth md:auto-cols-[50%] lg:auto-cols-[33.33%] xl:auto-cols-[20%] border border-gray-300 divide-x divide-gray-300"
+      >
+        <!-- Relative Container 1 -->
+        <div
+          class="w-full bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/sonyheadphone.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Sony XB950BT Wireless Headphones - Extra Bass
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex flex-row items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 2 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/applemacbookpro.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Apple MacBook Pro 16" M1 Pro 16GB/512GB Silver
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 3 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/gamingconsole.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Microware 9 Cap DualSense Wireless Controller
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 4 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/applewatch.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Apple Watch Series 9 GPS, 40mm Gold
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 5 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/speaker.png"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              Harman Kardon Invoke Voice-Activated Speaker
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+        <!-- Relative Container 6 -->
+        <div
+          class="bg-white p-4 relative flex flex-col justify-between gap-y-2"
+        >
+          <div class="flex flex-col gap-y-2 grow h-full justify-between">
+            <img
+              src="images/sonymonitor.avif"
+              alt=""
+              class="w-full object-contain max-w-[300px] aspect-square"
+            />
+            <p class="text-sm text-gray-500">BEST SELLERS</p>
+            <h4 class="text-[#1e2d7d] text-[14px] font-medium line-clamp-2">
+              New Sony XBR-950G BRAVIA 4K HDR Ultra HD TV
+            </h4>
+            <!-- Colors -->
+            <div
+              class="flex items-center gap-x-[5px] [&>div]:cursor-pointer [&>div]:w-2.5 [&>div]:h-2.5 [&>div]:rounded-full [&>div]:border-2 [&>div]:p-2 [&>div]:border-gray-300"
+            >
+              <div class="bg-black"></div>
+              <div class="bg-[#0e238a]"></div>
+              <div class="bg-[#697178]"></div>
+              <p class="font-medium cursor-pointer">1+</p>
+            </div>
+            <!-- Price -->
+            <div class="flex items-center gap-x-2">
+              <p class="text-2xl text-[#e00] font-semibold">$31.95</p>
+              <p class="text-xs line-through">$49.99</p>
+            </div>
+            <!-- Rating -->
+            <div class="flex items-center gap-x-2">
+              <!-- Stars -->
+              <div class="flex flex-row [&>i]:text-[#f5bf42] [&>i]:text-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <!-- Review Count -->
+              <p class="text-xs text-gray-600">1 reviews</p>
+            </div>
+          </div>
+          <!-- Add to Cart -->
+          <div
+            class="flex gap-x-2 bg-[#f4f5f6] w-full justify-center py-2 rounded-md cursor-pointer hover:bg-[#76bcc9] duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="font-medium text-sm">Add to Cart</p>
+          </div>
+          <!-- Red Marks -->
+          <div class="flex flex-col gap-y-2 absolute top-4 left-0">
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              On Sale
+            </p>
+            <p
+              class="bg-red-500 text-white px-[0.3rem] py-[0.2rem] text-[0.7rem] rounded-tr-sm rounded-br-sm w-fit"
+            >
+              Save 97%
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest News -->
+    <div class="mx-4 mb-12 flex flex-col gap-y-4">
+      <div class="flex flex-row justify-between">
+        <h2 class="text-[#1e2d7d] font-semibold text-2xl">Latest News</h2>
+        <div
+          class="my-2 flex items-center justify-center gap-x-2 bg-transparent w-fit pb-[3px] border-b hover:border-[#1e2d7d] hover:scale-105 cursor-pointer duration-300 ease-in-out"
+        >
+          <p class="text-sm text-[#1e2d7d]">View All Posts</p>
+          <i
+            class="fa-regular fa-square-caret-right text-[#1e2d7d] text-sm"
+          ></i>
+        </div>
+      </div>
+      <!-- Posts -->
+      <div class="flex flex-col gap-y-6 md:flex-row md:gap-y-0 md:gap-x-4">
+        <!-- Post 1 -->
+        <div
+          class="[&>img]:rounded-sm flex flex-col items-start gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/news1.avif"
+            alt=""
+            class="w-full hover:contrast-125 duration-300"
+          />
+          <div class="space-y-2">
+            <div
+              class="[&>p]:text-sm [&>p]:text-gray-500 flex items-center gap-x-2"
+            >
+              <p>Admin</p>
+              <div class="w-[5px] h-[5px] bg-gray-400 rounded-full"></div>
+              <p>May 14, 2025</p>
+            </div>
+            <h3 class="text-[#1e2d7d] font-medium text-lg">
+              The Latest Trends in Electronics: What You Need to know
+            </h3>
+          </div>
+        </div>
+        <!-- Post 2 -->
+        <div
+          class="[&>img]:rounded-sm flex flex-col items-start gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/news2.avif"
+            alt=""
+            class="w-full hover:contrast-125 duration-300"
+          />
+          <div class="space-y-2">
+            <div
+              class="[&>p]:text-sm [&>p]:text-gray-500 flex items-center gap-x-2"
+            >
+              <p>Admin</p>
+              <div class="w-[5px] h-[5px] bg-gray-400 rounded-full"></div>
+              <p>May 14, 2025</p>
+            </div>
+            <h3 class="text-[#1e2d7d] font-medium text-lg">
+              High-Performance Laptop for Professionals
+            </h3>
+          </div>
+        </div>
+        <!-- Post 3 -->
+        <div
+          class="[&>img]:rounded-sm flex flex-col items-start gap-y-4 cursor-pointer"
+        >
+          <img
+            src="images/news3.avif"
+            alt=""
+            class="w-full hover:contrast-125 duration-300"
+          />
+          <div class="space-y-2">
+            <div
+              class="[&>p]:text-sm [&>p]:text-gray-500 flex items-center gap-x-2"
+            >
+              <p>Admin</p>
+              <div class="w-[5px] h-[5px] bg-gray-400 rounded-full"></div>
+              <p>May 14, 2025</p>
+            </div>
+            <h3 class="text-[#1e2d7d] font-medium text-lg">
+              The Latest Watches: Keeping Time in Style
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specialities -->
+    <div
+      class="bg-[#ebf4fe] grid grid-rows-1 grid-flow-col overflow-x-auto auto-cols-[70%] md:overflow-x-hidden md:grid-cols-2 md:grid-rows-2 xl:grid-rows-1 xl:grid-cols-4 border-y border-gray-300 divide-x divide-gray-300"
+    >
+      <!-- First -->
+      <div class="py-20 md:py-8 flex flex-col items-center gap-y-4">
+        <img src="images/icon-01.svg" alt="" class="w-[60px]" />
+        <div class="space-y-[5px]">
+          <h4 class="text-[#1e2d7d] text-lg font-medium text-center">
+            Free delivery for $80+ orders
+          </h4>
+          <p class="text-gray-500 text-center text-xs">
+            We deliver in 48 hours max!
+          </p>
+        </div>
+      </div>
+      <!-- Second -->
+      <div class="py-20 md:py-8 flex flex-col items-center gap-y-4">
+        <img src="images/icon-02.svg" alt="" class="w-[60px]" />
+        <div class="space-y-[5px]">
+          <h4 class="text-[#1e2d7d] text-lg font-medium text-center">
+            Satisfied or refunded
+          </h4>
+          <p class="text-gray-500 text-center text-xs">
+            Free returns within 14 days
+          </p>
+        </div>
+      </div>
+      <!-- Third -->
+      <div class="py-20 md:py-8 flex flex-col items-center gap-y-4">
+        <img src="images/icon-03.svg" alt="" class="w-[60px]" />
+        <div class="space-y-[5px]">
+          <h4 class="text-[#1e2d7d] text-lg font-medium text-center">
+            We are available 24/7
+          </h4>
+          <p class="text-gray-500 text-center text-xs">
+            Contact us by chat, mail, phone
+          </p>
+        </div>
+      </div>
+      <!-- Fourth -->
+      <div class="py-20 md:py-8 flex flex-col items-center gap-y-4">
+        <img src="images/icon-04.svg" alt="" class="w-[60px]" />
+        <div class="space-y-[5px]">
+          <h4 class="text-[#1e2d7d] text-lg font-medium text-center">
+            100% Secure payments
+          </h4>
+          <p class="text-gray-500 text-center text-xs">
+            Visa, Mastercard, Amex, PayPal
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w-full bg-[#061871] text-white px-4 flex flex-col divide-y divide-gray-600 items-center"
+    >
+      <div class="w-full pt-14 pb-8">
+        <!-- Row 1 -->
+        <div
+          class="w-full flex flex-col items-center gap-y-10 md:flex-row md:gap-y-0 md:gap-x-4 md:items-start lg:justify-evenly"
+        >
+          <!-- Column 1 -->
+          <div class="flex flex-col items-center gap-y-4 md:items-start">
+            <img src="images/TEKNOMART-Whaite.svg" alt="" class="max-w-32" />
+            <p class="text-xs text-center md:text-left">
+              Monday - Friday: 9:00- 20:00 Saturday: 11:00 - 15:00
+            </p>
+            <div
+              class="[&>div]:flex [&>div]:items-center md:[&>div]:justify-start [&>div]:gap-x-4 flex flex-col gap-y-2"
+            >
+              <div class="[&>i]:w-[18px]">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="text-xs">
+                  268 St, South New York/NY 98944, United States
+                </p>
+              </div>
+              <div class="">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p class="text-xs">+5942-000-222</p>
+              </div>
+              <div class="">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="text-xs">order@woomen.com</p>
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="flex flex-col items-center gap-y-6 md:items-start">
+            <h5 class="text-lg font-semibold">Company</h5>
+            <ul
+              class="flex flex-col items-center gap-y-2 text-xs md:items-start [&>li]:cursor-pointer [&>li]:hover:scale-105 [&>li]:hover:font-medium [&>li]:duration-300"
+            >
+              <li>Blogs</li>
+              <li>Collection</li>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Find a Store</li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="flex flex-col items-center gap-y-6 md:items-start">
+            <h5 class="text-lg font-semibold">Resources</h5>
+            <ul
+              class="flex flex-col items-center gap-y-2 text-xs md:items-start [&>li]:cursor-pointer [&>li]:hover:scale-105 [&>li]:hover:font-medium [&>li]:duration-300"
+            >
+              <li>Wholesale</li>
+              <li>Become a Retailer</li>
+              <li>Corporate Orders</li>
+              <li>Store Locator</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="flex flex-col items-center gap-y-6 md:items-start">
+            <h5 class="text-lg font-semibold">Legal Area</h5>
+            <ul
+              class="flex flex-col items-center gap-y-2 text-xs md:items-start [&>li]:cursor-pointer [&>li]:hover:scale-105 [&>li]:hover:font-medium [&>li]:duration-300"
+            >
+              <li>Privacy Policy</li>
+              <li>Terms and Conditions</li>
+              <li>Sustainability</li>
+              <li>Cookie Policy</li>
+            </ul>
+          </div>
+          <!-- Column 5 -->
+          <div class="flex flex-col items-center gap-y-6 lg:items-start">
+            <h5 class="text-center text-lg font-semibold lg:text-left">
+              Subscribe to Our Newsletter
+            </h5>
+            <p class="text-center text-sm lg:text-left">
+              Subscribe to get notified about product launches, special offers
+              and news.
+            </p>
+            <div
+              class="w-full bg-white px-4 py-2 flex items-center justify-between md:flex-col md:gap-y-2 md:text-center md:items-center lg:flex-row lg:items-center lg:gap-y-0 lg:justify-between rounded-md"
+            >
+              <input
+                type="text"
+                placeholder="Email Address..."
+                class="outline-none h-full w-[70%] md:w-full lg:w-[70%] placeholder-gray-400 text-[#1e2d7d] md:text-center lg:text-left md:h-[50px] lg:h-auto"
+              />
+              <button
+                class="w-fit text-[#1e2d7d] border p-2 rounded-lg hover:bg-[#76bcc9] cursor-pointer duration-300 hover:scale-105 hover:border-[#76bcc9]"
+              >
+                Subscribe >
+              </button>
+            </div>
+            <div
+              class="flex flex-row gap-x-2 [&>i]:text-2xl [&>i]:cursor-pointer [&>i]:hover:scale-125 [&>i]:duration-300"
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-youtube"></i>
+              <i class="fa-brands fa-square-pinterest"></i>
+              <i class="fa-brands fa-tiktok"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div
+        class="py-8 w-full flex flex-col items-center gap-y-4 text-xs [&>div]:flex [&>div]:gap-x-2 md:flex-row md:justify-between"
+      >
+        <!-- Column 1 -->
+        <div class="flex items-center">
+          <i class="fa-solid fa-flag-usa"></i>
+          <p>United States (USD $)</p>
+        </div>
+        <!-- Column 2 -->
+        <p class="">&copy; 2025, TeknoMart. Designed by Rayhan</p>
+        <!-- Column 3 -->
+        <div
+          class="[&>img]:cursor-pointer [&>img]:hover:scale-110 [&>img]:duration-300 [&>img]:ease-in-out"
+        >
+          <img src="images/Payment-01.svg" alt="" />
+          <img src="images/Payment-02.svg" alt="" />
+          <img src="images/Payment-03.svg" alt="" />
+          <img src="images/Payment-04.svg" alt="" />
+          <img src="images/Payment-05.svg" alt="" />
+          <img src="images/Payment-06.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
